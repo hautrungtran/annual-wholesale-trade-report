@@ -23,7 +23,7 @@ module ShipstrTest
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    config.angular_templates.ignore_prefix  = %w(angular/templates/)
+    config.angular_templates.ignore_prefix  = %w(angular/views/)
     config.autoload_paths += %W(#{config.root}/lib/ #{config.root}/app/navigation_renderers/)
   end
 end

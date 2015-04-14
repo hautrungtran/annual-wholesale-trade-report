@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'unicorn'
+gem 'colorize'
 # endregion
 
 # region Front-end
@@ -26,6 +27,10 @@ gem 'active_model_serializers'
 gem 'angular-rails-templates'
 gem 'angularjs-rails-resource', '~> 2.0.0'
 gem 'bower-rails', '~> 0.9.2'
+# endregion
+
+# region Excel
+gem 'roo-xls'
 # endregion
 
 # region Development + Test gems

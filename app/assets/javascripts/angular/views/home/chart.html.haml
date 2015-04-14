@@ -1,0 +1,13 @@
+%h3 3D Chart
+%highchart{config: 'chartCtrl.chartOptions'}
+%hr
+%form.form-horizontal
+  .form-group.col-md-6
+    %label.col-sm-3.control-label Alpha Angle
+    .col-sm-9
+      %input.form-control{type: 'range', min:'0', max:'45', ng: {model: 'chartCtrl.alpha', change: 'chartCtrl.rerawChart()'}, :'ng-model-options' => '{debounce: 200}'}
+  .form-group.col-md-6
+    %label.col-sm-3.control-label Beta Angle
+    .col-sm-9
+      %input.form-control{type: 'range', min:'0', max:'45', ng: {model: 'chartCtrl.beta', change: 'chartCtrl.rerawChart()'}, :'ng-model-options' => '{debounce: 200}'}
+%hr

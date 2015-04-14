@@ -1,41 +1,28 @@
 !!!
 %html
   %head
-    %title Shipstr Test
+    %title Annual Wholesale Trade Report
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-  %body.skin-blue
+  %body.skin-yellow
     .wrapper
       / Main Header
       %header.main-header
         / Logo
-        %a.logo{:href => "index2.html"}
-          %b> Shipstr Test
-        %nav.navbar.navbar-static-top{:role => "navigation"}
-          %a.sidebar-toggle{"data-toggle" => "offcanvas", :href => "#", :role => "button"}
+        %a.logo{:href => '/'}
+          %b> Wholesale Trade
+        %nav.navbar.navbar-static-top{:role => 'navigation'}
+          %a.sidebar-toggle{'data-toggle' => 'offcanvas', :href => '#', :role => 'button'}
             %span.sr-only Toggle navigation
       %aside.main-sidebar
         %section.sidebar
           = render_navigation :expand_all => true
       .content-wrapper
-        %section.content-header
-          %h1
-            Page Header
-            %small Optional description
-          %ol.breadcrumb
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-dashboard
-                Level
-            %li.active Here
-        %section.content
-          = yield
+        = yield
       %footer.main-footer
-        .pull-right.hidden-xs
-          Anything you want
         %strong
           Copyright © 2015
-          = succeed "." do
-            %a{:href => "#"} Company
+          = succeed '.' do
+            %a{:href => '#'} ChanChungHao
         All rights reserved.

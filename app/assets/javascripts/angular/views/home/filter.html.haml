@@ -1,0 +1,15 @@
+.h3 Search
+.row
+  .col-md-4
+    %ui-select{ng: {model: 'filterCtrl.dataItem'}, theme: 'bootstrap'}
+      %ui-select-match{placeholder: 'Choose data item in the list...'}
+        {{$select.selected.name}}
+      %ui-select-choices{repeat: 'dataItem in filterCtrl.dataItems | filter: $select.search'}
+        %span{ng: {bind: {html: 'dataItem.name | highlight: $select.search'}}}
+  .col-md-4
+    %ui-select{ng: {model: 'filterCtrl.operationType'}, theme: 'bootstrap'}
+      %ui-select-match{placeholder: 'Choose operation type in the list...'}
+        {{$select.selected.name}}
+      %ui-select-choices{repeat: 'operationType in filterCtrl.operationTypes | filter: $select.search'}
+        %span{ng: {bind: {html: 'operationType.name | highlight: $select.search'}}}
+
