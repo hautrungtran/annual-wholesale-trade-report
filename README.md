@@ -45,3 +45,9 @@ You can import all sample data with one command
 rake import:sample_data
 ```
 ## You've done and now you can browse [http://localhost:3000](http://localhost:3000).
+
+## Screenshot
+
+![screenshot-localhost 3000 2015-04-14 17-35-29](https://cloud.githubusercontent.com/assets/5194493/7135016/ce4e6f6a-e2cc-11e4-86db-b8157d7d3a8f.png)
+
+
