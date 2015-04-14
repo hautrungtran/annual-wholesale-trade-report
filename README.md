@@ -7,18 +7,18 @@ Only tested on Ubuntu.
 1. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [Vagrant](http://www.vagrantup.com/downloads.html)
 
-## Install Vagrant plugins:
+## Install Vagrant plugins
 ```
 vagrant plugin install vagrant-vbguest
 vagrant plugin install vagrant-librarian-chef-nochef
 ```
 ## Clone or download this repo
 ```
-git clone https://github.com/shine60vn/shipstr-test.git
+git clone https://github.com/chanchunghao/annual-wholesale-trade-report
 ```
 or
 ```
-wget https://github.com/shine60vn/shipstr-test.git
+wget https://github.com/chanchunghao/annual-wholesale-trade-report/archive/master.zip
 ```
 ## Start Vagrant box
 ```
