@@ -48,7 +48,7 @@ rake import:sample_data
 
 ## Wiki
 
-[Wiki](https://github.com/chanchunghao/annual-wholesale-trade-report/wiki)
+Please go to [Wiki](https://github.com/chanchunghao/annual-wholesale-trade-report/wiki) for more information.
 
 ## Screenshot
 
